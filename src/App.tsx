@@ -81,7 +81,7 @@ function App() {
     },
   ]);
   const onChange = (value: string, i: number) => {
-    const updated = fields.map((item, index) =>
+    const updated = fields.map((item: Props, index: number) =>
       index === i ? { ...item, type: value } : item
     );
     setFields(updated);
